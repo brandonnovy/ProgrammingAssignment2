@@ -1,7 +1,7 @@
 # This code is based on the original makeVector and cacheMean functions by Dr. Roger D. Peng.
 # I reused the code to create a matrix and solve the inverse of said matrix.
 # https://github.com/rdpeng/ProgrammingAssignment2
-# Brandon Novy - 12/27/2015
+# BN - 12/27/2015
 
 makeCacheMatrix <- function(x = matrix()) {
 	i <- NULL
