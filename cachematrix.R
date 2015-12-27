@@ -22,14 +22,14 @@ cacheSolve <- function(x, ...) {
 	# if the inverse is not blank then get it from the cache
  	if(!is.null(i)) {
       	message("Getting cached data...")
+      	# exit function with cached data
             return(i)
         }
-
-	# if inverse is blank, then calculate the inverse
+	# matrix is blank, so calculate the inverse and load it into the matrix
         data <- x$get()
         i <- solve(data, ...)
 
-	  # set the value of the inverse in the cache
+	# set the value of the inverse in the cache
         x$setinv(i)
         i
 }
